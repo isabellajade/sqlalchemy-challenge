@@ -30,7 +30,7 @@ def welcome():
         f"/api/v1.0/tobs<br/>"
         f"/api/v1.0/temp/start/<start><br/>"
         f"/api/v1.0/temps/start/end<br/>"
-        f"<p>'start' and 'end' date should be in the format YYYY-MM-DD.</p>"
+        f"<p>'start' and 'end' should be replaced with a date in the format YYYY-MM-DD.</p>"
     )
 
 @app.route("/api/v1.0/precipitation")
@@ -86,7 +86,7 @@ def stats(start=None, end=None):
     start = dt.datetime.strptime(start, "%Y-%m-%d")
     end = dt.datetime.strptime(end, "%Y-%m-%d")
 
-    results = session.queyr(*sel).\
+    results = session.query(*sel).\
         filter(Measurement.date >= start).\
         filter(Measurement.date <= end).all()
 
