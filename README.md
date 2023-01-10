@@ -4,11 +4,13 @@ For this project I created a climate analysis for the area of Honolulu, Hawaii. 
 
 ## Precipitation Analysis
 For this analysis I retrieved the past 12 months of precipitation data and plotted the results using Pandas and Matplotlib.
-!(image of the chart)[Images/precipitation.png]
+
+![precipitation](Images/precipitation.png)
 
 ## Station Analysis
 In this part of the analysis I found the most-active station and designed a query that calculates the lowest, highest, and average temperatures of that station. Then, I retrieved the previous 12 months of observed temperature data at this station and plotted the results using a histogram. 
-(image of chart)
+
+![temperature](Images/temperature.png)
 
 ## Designing a Climate API
 Now that the initial analysis has been completed, based on the queries I just developed, I created a Flask API. The routes are as follows;
