@@ -16,10 +16,15 @@ In this part of the analysis I found the most-active station and designed a quer
 Now that the initial analysis has been completed, based on the queries I just developed, I created a Flask API. The routes are as follows;
 
 - /api/v1.0/precipitation
+    - Returns json with the date as the key and the value as the precipitation.
 - /api/v1.0/stations
+    - Returns jsonified data of all of the stations in the database.
 - /api/v1.0/tobs
+    - Returns jsonified data for the most active station for the past year.
 - /api/v1.0/temp/start/
+    - Returns the min, max, and average temperatures calculated from the given start date to the end of the dataset
 - /api/v1.0/temps/start/end
+    - Returns the min, max, and average temperatures calculated from the given start date to the given end date
 
 Below is an images of the homepage of the API.
 
