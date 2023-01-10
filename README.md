@@ -21,4 +21,10 @@ Now that the initial analysis has been completed, based on the queries I just de
 - /api/v1.0/temp/start/
 - /api/v1.0/temps/start/end
 
-(example photo of one of the routes working?)
+Below is an images of the homepage of the API.
+
+![homepage](Images/homepage.png)
+
+Here is an example of what a route would look like when using /api/v1.0/temps/start/end
+
+![start-end](Images/start-end.png)
